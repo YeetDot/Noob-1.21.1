@@ -1,27 +1,18 @@
 package com.yeetdot.noob.entity.client;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Iterables;
 import com.yeetdot.noob.entity.custom.NoobEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.client.render.entity.model.EntityModelPartNames;
 
-import java.util.List;
-
 // Made with Blockbench 4.10.4
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
 public class NoobModel<T extends NoobEntity> extends BipedEntityModel<T> {
-	public static TexturedModelData getTexturedModelData(){
-		ModelData modelData = new ModelData();
-		return TexturedModelData.of(modelData, 64, 32);
-	}
-	
-	
 
-    public NoobModel(ModelPart root) {
+
+	public NoobModel(ModelPart root) {
 		super(root, RenderLayer::getEntityTranslucent);
     }
 
