@@ -11,6 +11,8 @@
   "advancement.noob.root.title": "Noob Beginnings",
   "advancement.noob.root.description": "Your journey to become a noob begins here",
   "advancement.noob.has_staff_block.title": "Impossible Compacting",
-  "advancement.noob.has_staff_block.description": "Obtained a staff block for the first time"
+  "advancement.noob.has_staff_block.description": "Obtained a staff block for the first time",
+  "advancement.noob.kill_noob.title": "Noob 0.00001%",
+  "advancement.noob.kill_noob.description": "Defeated Noob(?)"
 
 }

@@ -16,10 +16,9 @@
     "description": {
       "translate": "advancement.noob.has_staff_block.description"
     },
-    "frame": "challenge",
     "icon": {
       "count": 1,
-      "id": "noob:staff"
+      "id": "noob:staff_block"
     },
     "title": {
       "translate": "advancement.noob.has_staff_block.title"
@@ -30,8 +29,5 @@
       "has_staff_block"
     ]
   ],
-  "rewards": {
-    "experience": 100000
-  },
   "sends_telemetry_event": true
 }

@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:noob/has_staff_block",
+  "criteria": {
+    "kill_noob": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "noob:noob"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.noob.kill_noob.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "noob:noob_skull"
+    },
+    "title": {
+      "translate": "advancement.noob.kill_noob.title"
+    }
+  },
+  "requirements": [
+    [
+      "kill_noob"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
