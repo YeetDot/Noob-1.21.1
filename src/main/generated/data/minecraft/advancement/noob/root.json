@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "has_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "noob:staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/block/quartz_pillar.png",
+    "description": {
+      "translate": "advancement.noob.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "noob:staff"
+    },
+    "title": {
+      "translate": "advancement.noob.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

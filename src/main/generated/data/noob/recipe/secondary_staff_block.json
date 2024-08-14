@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "staff_block",
+  "key": {
+    "S": {
+      "item": "noob:staff"
+    }
+  },
+  "pattern": [
+    "SS ",
+    "S S",
+    " SS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "noob:staff_block"
+  }
+}

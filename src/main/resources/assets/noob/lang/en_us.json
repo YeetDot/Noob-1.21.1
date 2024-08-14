@@ -1,0 +1,16 @@
+{
+  "item.noob.staff": "Staff",
+
+  "block.noob.staff_block": "Block of Staff",
+  "item.noob.noob_skull": "Noob Head",
+  "item.noob.noob_spawn_egg": "Spawn Noob",
+
+  "entity.noob.noob": "Noob",
+  "itemgroup.noob": "Noob",
+
+  "advancement.noob.root.title": "Noob Beginnings",
+  "advancement.noob.root.description": "Your journey to become a noob begins here",
+  "advancement.noob.has_staff_block.title": "Impossible Compacting",
+  "advancement.noob.has_staff_block.description": "Obtained a staff block for the first time"
+
+}
