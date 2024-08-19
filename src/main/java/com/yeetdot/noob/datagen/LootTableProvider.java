@@ -15,5 +15,6 @@ public class LootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.STAFF_BLOCK);
+
     }
 }
