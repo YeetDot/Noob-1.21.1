@@ -1,7 +1,7 @@
 package com.yeetdot.noob.datagen;
 
+import com.yeetdot.noob.block.ModBlocks;
 import com.yeetdot.noob.entity.ModEntities;
-import com.yeetdot.noob.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.SimpleFabricLootTableProvider;
 import net.minecraft.loot.LootPool;
@@ -25,7 +25,7 @@ public class MobDropsProvider extends SimpleFabricLootTableProvider {
 
     @Override
     public void accept(BiConsumer<RegistryKey<LootTable>, LootTable.Builder> lootTableBiConsumer) {
-        lootTableBiConsumer.accept(ModEntities.NOOB.getLootTableId(), LootTable.builder().pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0F)).with(ItemEntry.builder(ModItems.NOOB_SKULL).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0F))))));
+        lootTableBiConsumer.accept(ModEntities.NOOB.getLootTableId(), LootTable.builder().pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0F)).with(ItemEntry.builder(ModBlocks.NOOB_SKULL).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0F))))));
     }
 
 

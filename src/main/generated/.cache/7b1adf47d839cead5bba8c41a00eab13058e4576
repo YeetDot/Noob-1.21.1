@@ -1,7 +1,7 @@
-// 1.21.1	2024-08-19T18:47:10.4341834	Noob/Recipes
-112001db54cd41af624c53bc33081a742c07f6fb data\noob\advancement\recipes\misc\secondary_staff_block.json
+// 1.21.1	2024-08-21T13:05:42.0689523	Noob/Recipes
 d5a1c7cab267c677e936bf7357fb7208f657f0e5 data\noob\advancement\recipes\misc\staff_from_staff_block.json
-acee6cc7996f55d728e574cdb8e33fd097b5f0f2 data\noob\recipe\staff_block.json
-ff75fac92ca1cd3300b1fcb7b2e1ae21dc2b0efc data\noob\advancement\recipes\misc\staff_block.json
-dc8f4ee828ae46327dd6fea3a30fa53976d0f6df data\noob\recipe\secondary_staff_block.json
 1028d51889376f84b37a56b05ffe5e70ab410439 data\noob\recipe\staff_from_staff_block.json
+112001db54cd41af624c53bc33081a742c07f6fb data\noob\advancement\recipes\misc\secondary_staff_block.json
+acee6cc7996f55d728e574cdb8e33fd097b5f0f2 data\noob\recipe\staff_block.json
+dc8f4ee828ae46327dd6fea3a30fa53976d0f6df data\noob\recipe\secondary_staff_block.json
+ff75fac92ca1cd3300b1fcb7b2e1ae21dc2b0efc data\noob\advancement\recipes\misc\staff_block.json

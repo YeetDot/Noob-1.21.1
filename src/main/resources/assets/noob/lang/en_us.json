@@ -1,8 +1,8 @@
 {
-  "item.noob.staff": "Staff",
+  "item.noob.staff": "§7§mStaff§r§7(Deprecated, use Raw Cod)",
 
   "block.noob.staff_block": "Block of Staff",
-  "item.noob.noob_skull": "Noob Head",
+  "block.noob.noob_skull": "Noob Head",
   "item.noob.noob_spawn_egg": "Spawn Noob",
 
   "entity.noob.noob": "Noob",

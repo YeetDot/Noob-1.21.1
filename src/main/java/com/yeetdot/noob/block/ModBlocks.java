@@ -1,6 +1,7 @@
 package com.yeetdot.noob.block;
 
 import com.yeetdot.noob.Noob;
+import com.yeetdot.noob.block.custom.NoobSkull;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -11,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block STAFF_BLOCK = registerBlock("staff_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block NOOB_SKULL = registerBlock("noob_skull", new NoobSkull(AbstractBlock.Settings.create()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
