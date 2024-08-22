@@ -25,8 +25,7 @@ public class ModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.STAFF, Models.GENERATED);
-        itemModelGenerator.register(ModItems.NOOB_SKULL, Models.GENERATED);
-
+        itemModelGenerator.register(ModBlocks.NOOB_SKULL.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModItems.NOOB_SPAWN_EGG, new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

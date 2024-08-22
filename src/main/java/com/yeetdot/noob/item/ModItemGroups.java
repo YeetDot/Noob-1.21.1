@@ -16,14 +16,13 @@ public class ModItemGroups {
             Identifier.of(Noob.MOD_ID, "noob"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.noob"))
                     .icon(() -> new ItemStack(Blocks.COARSE_DIRT)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.STAFF);
                         entries.add(ModBlocks.STAFF_BLOCK);
-                        entries.add(ModItems.NOOB_SKULL);
+                        entries.add(ModBlocks.NOOB_SKULL);
                         entries.add(ModItems.NOOB_SPAWN_EGG);
                     }).build());
 
 
     public static void RegisterItemGroups() {
-        Noob.LOGGER.info("Registering Item Groups For" + Noob.MOD_ID);
+        Noob.LOGGER.info("Registering {} For" + Noob.MOD_ID, NOOB_GROUP);
     }
 }

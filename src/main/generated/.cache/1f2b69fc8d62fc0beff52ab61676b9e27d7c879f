@@ -1,7 +1,7 @@
-// 1.21.1	2024-08-14T14:41:56.6942768	Noob/Model Definitions
+// 1.21.1	2024-08-21T13:05:42.0624279	Noob/Model Definitions
 4c8961db3220db81c4309f4e935b44124772d786 assets\noob\models\item\staff.json
+0dbb0175615efa8df7e248f242a4d254e175ebd8 assets\noob\models\item\noob_skull.json
 1f771b2c88b35e9400ee5694ef012cdf2c06a064 assets\noob\models\block\staff_block.json
 2547b6eb953c42329c0f3386ec3680b455f940ce assets\noob\blockstates\staff_block.json
-cda32236f96edeb02908507955c5772183794784 assets\noob\models\item\staff_block.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\noob\models\item\noob_spawn_egg.json
-0dbb0175615efa8df7e248f242a4d254e175ebd8 assets\noob\models\item\noob_skull.json
+cda32236f96edeb02908507955c5772183794784 assets\noob\models\item\staff_block.json

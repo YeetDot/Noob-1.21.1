@@ -11,7 +11,6 @@ import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.AdvancementRewards;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.advancement.criterion.OnKilledCriterion;
-import net.minecraft.entity.damage.DamageSources;
 import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
@@ -58,7 +57,7 @@ public class AdvancementProvider extends FabricAdvancementProvider {
 
         AdvancementEntry killNoob = Advancement.Builder.create().parent(gotStaffBlock)
                 .display(
-                        ModItems.NOOB_SKULL,
+                        ModBlocks.NOOB_SKULL,
                         Text.translatable("advancement.noob.kill_noob.title"),
                         Text.translatable("advancement.noob.kill_noob.description"),
                         null,

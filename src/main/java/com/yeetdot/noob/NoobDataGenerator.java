@@ -15,5 +15,6 @@ public class NoobDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModelProvider::new);
 		pack.addProvider(RecipeProvider::new);
 		pack.addProvider(AdvancementProvider::new);
+		pack.addProvider(MobDropsProvider::new);
 	}
 }
