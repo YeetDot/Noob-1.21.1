@@ -1,10 +1,10 @@
 {
   "criteria": {
-    "has_staff": {
+    "has_dirt": {
       "conditions": {
         "items": [
           {
-            "items": "noob:staff"
+            "items": "minecraft:dirt"
           }
         ]
       },
@@ -12,21 +12,24 @@
     }
   },
   "display": {
+    "announce_to_chat": false,
     "background": "minecraft:textures/block/quartz_pillar.png",
     "description": {
       "translate": "advancement.noob.root.description"
     },
+    "hidden": true,
     "icon": {
       "count": 1,
-      "id": "noob:staff"
+      "id": "minecraft:dirt"
     },
+    "show_toast": false,
     "title": {
       "translate": "advancement.noob.root.title"
     }
   },
   "requirements": [
     [
-      "has_staff"
+      "has_dirt"
     ]
   ],
   "sends_telemetry_event": true

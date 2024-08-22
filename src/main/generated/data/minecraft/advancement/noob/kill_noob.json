@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:noob/has_staff_block",
+  "parent": "minecraft:noob/has_raw_fish",
   "criteria": {
     "kill_noob": {
       "conditions": {

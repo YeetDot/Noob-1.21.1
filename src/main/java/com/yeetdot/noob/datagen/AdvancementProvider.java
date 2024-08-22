@@ -1,5 +1,6 @@
 package com.yeetdot.noob.datagen;
 
+import com.yeetdot.noob.Noob;
 import com.yeetdot.noob.block.ModBlocks;
 import com.yeetdot.noob.entity.ModEntities;
 import com.yeetdot.noob.item.ModItems;
@@ -8,9 +9,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
-import net.minecraft.advancement.AdvancementRewards;
+import net.minecraft.advancement.AdvancementRequirements;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.advancement.criterion.OnKilledCriterion;
+import net.minecraft.item.Items;
 import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
@@ -28,34 +30,37 @@ public class AdvancementProvider extends FabricAdvancementProvider {
     public void generateAdvancement(RegistryWrapper.WrapperLookup registryLookup, Consumer<AdvancementEntry> consumer) {
         AdvancementEntry rootAdvancement = Advancement.Builder.create()
                 .display(
-                        ModItems.STAFF,
+                        Items.DIRT,
                         Text.translatable("advancement.noob.root.title"),
                         Text.translatable("advancement.noob.root.description"),
                         Identifier.of("textures/block/quartz_pillar.png"),
                         AdvancementFrame.TASK,
-                        true,
-                        true,
-                        false
+                        false,
+                        false,
+                        true
                 )
-                .criterion("has_staff", InventoryChangedCriterion.Conditions.items(ModItems.STAFF))
-                .build(consumer, "noob" + "/root");
+                .criterion("has_dirt", InventoryChangedCriterion.Conditions.items(Items.DIRT))
+                .build(consumer, Noob.MOD_ID + "/root");
 
-        AdvancementEntry gotStaffBlock = Advancement.Builder.create().parent(rootAdvancement)
+        AdvancementEntry HasRawFish = Advancement.Builder.create().parent(rootAdvancement)
                 .display(
-                        ModBlocks.STAFF_BLOCK,
+                        Items.COD,
                         Text.translatable("advancement.noob.has_staff_block.title"),
-                        Text.translatable("advancement.noob.has_staff_block.description"),
+                        Text.translatable("advancement.noob.has_raw_fish.description"),
                         null,
                         AdvancementFrame.TASK,
                         true,
                         true,
                         false
                 )
-                .rewards(AdvancementRewards.Builder.experience(0))
-                .criterion("has_staff_block", InventoryChangedCriterion.Conditions.items(ModBlocks.STAFF_BLOCK))
-                .build(consumer, "noob" + "/has_staff_block");
+                .criterion("has_raw_cod", InventoryChangedCriterion.Conditions.items(Items.COD))
+                .criterion("has_raw_salmon", InventoryChangedCriterion.Conditions.items(Items.SALMON))
+                .criterion("has_raw_tropical_fish", InventoryChangedCriterion.Conditions.items(Items.TROPICAL_FISH))
+                .criterion("has_raw_pufferfish", InventoryChangedCriterion.Conditions.items(Items.PUFFERFISH))
+                .criteriaMerger(AdvancementRequirements.CriterionMerger.OR)
+                .build(consumer, Noob.MOD_ID + "/has_raw_fish");
 
-        AdvancementEntry killNoob = Advancement.Builder.create().parent(gotStaffBlock)
+        AdvancementEntry killNoob = Advancement.Builder.create().parent(HasRawFish)
                 .display(
                         ModBlocks.NOOB_SKULL,
                         Text.translatable("advancement.noob.kill_noob.title"),
@@ -67,7 +72,7 @@ public class AdvancementProvider extends FabricAdvancementProvider {
                         false
                 )
                 .criterion("kill_noob", OnKilledCriterion.Conditions.createPlayerKilledEntity(EntityPredicate.Builder.create().type(ModEntities.NOOB)))
-                .build(consumer, "noob/kill_noob");
+                .build(consumer, Noob.MOD_ID + "/kill_noob");
     }
 
 

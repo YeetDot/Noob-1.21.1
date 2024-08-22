@@ -3,7 +3,7 @@
 	"package": "com.yeetdot.noob.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-      "RawCodMixin"
+      "RawFishMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

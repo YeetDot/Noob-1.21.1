@@ -1,0 +1,66 @@
+{
+  "parent": "minecraft:noob/root",
+  "criteria": {
+    "has_raw_cod": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cod"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_pufferfish": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:pufferfish"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_salmon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:salmon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_tropical_fish": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:tropical_fish"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.noob.has_raw_fish.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:cod"
+    },
+    "title": {
+      "translate": "advancement.noob.has_staff_block.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_cod",
+      "has_raw_salmon",
+      "has_raw_tropical_fish",
+      "has_raw_pufferfish"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
