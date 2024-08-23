@@ -1,11 +1,12 @@
 {
-	"required": true,
-	"package": "com.yeetdot.noob.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "RawFishMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "com.yeetdot.noob.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PotionMixin",
+    "RawFishMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

@@ -4,8 +4,7 @@ import com.yeetdot.noob.Noob;
 import com.yeetdot.noob.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -19,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STAFF_BLOCK);
                         entries.add(ModBlocks.NOOB_SKULL);
                         entries.add(ModItems.NOOB_SPAWN_EGG);
+//                        entries.add(PotionContentsComponent.createStack(Items.POTION, ModPotions.ALL_EFFECT));
                     }).build());
 
 
