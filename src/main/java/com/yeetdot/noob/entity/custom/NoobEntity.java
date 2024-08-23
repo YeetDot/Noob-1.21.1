@@ -74,7 +74,7 @@ public class NoobEntity extends HostileEntity implements RangedAttackMob {
         this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0));
         this.targetSelector.add(1, new RevengeGoal(this).setGroupRevenge(ZombifiedPiglinEntity.class));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, false));
-//        this.targetSelector.add(2, new ProjectileAttackGoal(this, 1.0, 600000000, 100.0F));
+        this.targetSelector.add(2, new ProjectileAttackGoal(this, 1.0, 60, 100.0F));
     }
 
     @Override
