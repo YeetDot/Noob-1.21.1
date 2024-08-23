@@ -18,11 +18,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STAFF_BLOCK);
                         entries.add(ModBlocks.NOOB_SKULL);
                         entries.add(ModItems.NOOB_SPAWN_EGG);
-//                        entries.add(PotionContentsComponent.createStack(Items.POTION, ModPotions.ALL_EFFECT));
                     }).build());
 
 
     public static void RegisterItemGroups() {
-        Noob.LOGGER.info("Registering {} For" + Noob.MOD_ID, NOOB_GROUP);
+        Noob.LOGGER.info("Registering {} For " + Noob.MOD_ID, NOOB_GROUP);
     }
 }

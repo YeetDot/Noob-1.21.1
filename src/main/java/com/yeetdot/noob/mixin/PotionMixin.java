@@ -14,7 +14,50 @@ import org.spongepowered.asm.mixin.Unique;
 @Mixin(Potions.class)
 public class PotionMixin {
     @Unique
-    private static final RegistryEntry<Potion> ALL_EFFECT = register(new Potion(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1200), new StatusEffectInstance(StatusEffects.RESISTANCE, 1200), new StatusEffectInstance(StatusEffects.SLOWNESS, 1200), new StatusEffectInstance(StatusEffects.SLOW_FALLING, 1200), new StatusEffectInstance(StatusEffects.ABSORPTION, 1200), new StatusEffectInstance(StatusEffects.BAD_OMEN, 1200), new StatusEffectInstance(StatusEffects.BLINDNESS, 1200), new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 1200), new StatusEffectInstance(StatusEffects.DARKNESS, 1200), new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1200), new StatusEffectInstance(StatusEffects.GLOWING, 1200), new StatusEffectInstance(StatusEffects.HASTE, 1200), new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 1200), new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 1200), new StatusEffectInstance(StatusEffects.HUNGER, 1200), new StatusEffectInstance(StatusEffects.INFESTED, 1200), new StatusEffectInstance(StatusEffects.INVISIBILITY, 1200), new StatusEffectInstance(StatusEffects.JUMP_BOOST, 1200), new StatusEffectInstance(StatusEffects.LEVITATION, 1200), new StatusEffectInstance(StatusEffects.LUCK, 1200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 1200), new StatusEffectInstance(StatusEffects.NAUSEA, 1200), new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200), new StatusEffectInstance(StatusEffects.OOZING, 1200), new StatusEffectInstance(StatusEffects.POISON, 1200), new StatusEffectInstance(StatusEffects.RAID_OMEN, 1200), new StatusEffectInstance(StatusEffects.REGENERATION, 1200), new StatusEffectInstance(StatusEffects.SATURATION, 1200), new StatusEffectInstance(StatusEffects.SPEED, 1200), new StatusEffectInstance(StatusEffects.STRENGTH, 1200), new StatusEffectInstance(StatusEffects.TRIAL_OMEN, 1200), new StatusEffectInstance(StatusEffects.UNLUCK, 1200), new StatusEffectInstance(StatusEffects.WATER_BREATHING, 1200), new StatusEffectInstance(StatusEffects.WEAKNESS, 1200), new StatusEffectInstance(StatusEffects.WEAVING, 1200), new StatusEffectInstance(StatusEffects.WIND_CHARGED, 1200), new StatusEffectInstance(StatusEffects.WITHER, 1200), new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1200), new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1200)));
+    private static final int duration = 1200;
+
+    @Unique
+    private static final RegistryEntry<Potion> ALL_EFFECT = register(new Potion(
+            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, duration),
+            new StatusEffectInstance(StatusEffects.RESISTANCE, duration),
+            new StatusEffectInstance(StatusEffects.SLOW_FALLING, duration),
+            new StatusEffectInstance(StatusEffects.ABSORPTION, duration),
+            new StatusEffectInstance(StatusEffects.CONDUIT_POWER, duration),
+            new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, duration),
+            new StatusEffectInstance(StatusEffects.GLOWING, duration),
+            new StatusEffectInstance(StatusEffects.HASTE, duration),
+            new StatusEffectInstance(StatusEffects.HEALTH_BOOST, duration),
+            new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, duration),
+            new StatusEffectInstance(StatusEffects.INVISIBILITY, duration),
+            new StatusEffectInstance(StatusEffects.JUMP_BOOST, duration),
+            new StatusEffectInstance(StatusEffects.LUCK, duration),
+            new StatusEffectInstance(StatusEffects.NIGHT_VISION, duration),
+            new StatusEffectInstance(StatusEffects.REGENERATION, duration),
+            new StatusEffectInstance(StatusEffects.SATURATION, duration),
+            new StatusEffectInstance(StatusEffects.SPEED, duration),
+            new StatusEffectInstance(StatusEffects.STRENGTH, duration),
+            new StatusEffectInstance(StatusEffects.WATER_BREATHING, duration),
+            new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, duration),
+            new StatusEffectInstance(StatusEffects.BAD_OMEN, duration),
+            new StatusEffectInstance(StatusEffects.RAID_OMEN, duration),
+            new StatusEffectInstance(StatusEffects.TRIAL_OMEN, duration),
+            new StatusEffectInstance(StatusEffects.SLOWNESS, duration),
+            new StatusEffectInstance(StatusEffects.BLINDNESS, duration),
+            new StatusEffectInstance(StatusEffects.DARKNESS, duration),
+            new StatusEffectInstance(StatusEffects.HUNGER, duration),
+            new StatusEffectInstance(StatusEffects.INFESTED, duration),
+            new StatusEffectInstance(StatusEffects.LEVITATION, duration),
+            new StatusEffectInstance(StatusEffects.MINING_FATIGUE, duration),
+            new StatusEffectInstance(StatusEffects.NAUSEA, duration),
+            new StatusEffectInstance(StatusEffects.OOZING, duration),
+            new StatusEffectInstance(StatusEffects.POISON, duration),
+            new StatusEffectInstance(StatusEffects.UNLUCK, duration),
+            new StatusEffectInstance(StatusEffects.WEAKNESS, duration),
+            new StatusEffectInstance(StatusEffects.WEAVING, duration),
+            new StatusEffectInstance(StatusEffects.WIND_CHARGED, duration),
+            new StatusEffectInstance(StatusEffects.WITHER, duration),
+            new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, duration)
+    ));
 
     @Unique
     private static RegistryEntry<Potion> register(Potion potion) {
