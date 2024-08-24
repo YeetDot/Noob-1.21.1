@@ -4,8 +4,7 @@ import com.yeetdot.noob.Noob;
 import com.yeetdot.noob.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -23,6 +22,6 @@ public class ModItemGroups {
 
 
     public static void RegisterItemGroups() {
-        Noob.LOGGER.info("Registering {} For" + Noob.MOD_ID, NOOB_GROUP);
+        Noob.LOGGER.info("Registering {} For " + Noob.MOD_ID, NOOB_GROUP);
     }
 }
