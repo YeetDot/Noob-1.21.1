@@ -1,6 +1,7 @@
 package com.yeetdot.noob.entity.custom;
 
 import com.yeetdot.noob.item.ModItems;
+import com.yeetdot.noob.item.ModPotions;
 import net.minecraft.component.type.PotionContentsComponent;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.RangedAttackMob;
@@ -99,7 +100,7 @@ public class NoobEntity extends HostileEntity implements RangedAttackMob {
         double e = target.getEyeY() - 1.1F - this.getY();
         double f = target.getZ() + vec3d.z - this.getZ();
         double g = Math.sqrt(d * d + f * f);
-        RegistryEntry<Potion> effect = RegistryEntry.of(Registries.POTION.get(Identifier.ofVanilla("all_effect")));
+        RegistryEntry<Potion> effect = ModPotions.ALL_EFFECT;
         PotionEntity potionEntity = new PotionEntity(this.getWorld(), this);
         potionEntity.setItem(PotionContentsComponent.createStack(Items.SPLASH_POTION, effect));
         potionEntity.setPitch(potionEntity.getPitch() - -20.0F);

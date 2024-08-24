@@ -1,23 +1,18 @@
-package com.yeetdot.noob.mixin;
+package com.yeetdot.noob.item;
 
+import com.yeetdot.noob.Noob;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.potion.Potion;
-import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Unique;
 
-@Mixin(Potions.class)
-public class PotionMixin {
-    @Unique
+public class ModPotions {
     private static final int duration = 1200;
 
-    @Unique
-    private static final RegistryEntry<Potion> ALL_EFFECT = register(new Potion(
+    public static final RegistryEntry<Potion> ALL_EFFECT = Registry.registerReference(Registries.POTION, Identifier.of(Noob.MOD_ID, "all_effect"), new Potion(
             new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, duration),
             new StatusEffectInstance(StatusEffects.RESISTANCE, duration),
             new StatusEffectInstance(StatusEffects.SLOW_FALLING, duration),
@@ -59,8 +54,8 @@ public class PotionMixin {
             new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, duration)
     ));
 
-    @Unique
-    private static RegistryEntry<Potion> register(Potion potion) {
-        return Registry.registerReference(Registries.POTION, Identifier.ofVanilla("all_effect"), potion);
+    public static void RegisterModPotions() {
+        Noob.LOGGER.info("Registering Potions for {}", Noob.MOD_ID);
     }
+
 }

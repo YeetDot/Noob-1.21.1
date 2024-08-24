@@ -3,7 +3,6 @@
   "package": "com.yeetdot.noob.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "PotionMixin",
     "RawFishMixin"
   ],
   "injectors": {
