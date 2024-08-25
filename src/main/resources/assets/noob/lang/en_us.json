@@ -3,6 +3,11 @@
   "item.minecraft.potion.effect.all_effect": "Potion of Everything",
   "item.minecraft.splash_potion.effect.all_effect": "Splash Potion of Everything",
   "item.minecraft.lingering_potion.effect.all_effect": "Lingering Potion of Everything",
+  "item.minecraft.potion.effect.all_effect_long": "Potion of Everything",
+  "item.minecraft.splash_potion.effect.all_effect_long": "Splash Potion of Everything",
+  "item.minecraft.lingering_potion.effect.all_effect_long": "Lingering Potion of Everything",
+
+  "effect.noob.creativity": "Creativity",
 
   "block.noob.staff_block": "Block of Staff",
   "block.noob.noob_skull": "Noob Head",

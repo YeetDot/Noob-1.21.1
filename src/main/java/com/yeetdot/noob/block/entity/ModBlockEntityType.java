@@ -10,7 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Util;
 
-public class ModBlockEntityType<T extends BlockEntity> implements FabricBlockEntityType {
+public class ModBlockEntityType implements FabricBlockEntityType {
     private static <T extends BlockEntity> BlockEntityType<T> registerBlockEntity(String name, BlockEntityType.Builder<T> builder){
         Type<?> type = Util.getChoiceType(TypeReferences.BLOCK_ENTITY, name);
         return Registry.register(Registries.BLOCK_ENTITY_TYPE, name, builder.build(type));

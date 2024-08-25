@@ -20,6 +20,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Noob.LOGGER.info("Registering Mod Items for " + Noob.MOD_ID);
+        Noob.LOGGER.info("Registering Items for " + Noob.MOD_ID);
     }
 }

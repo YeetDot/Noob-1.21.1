@@ -2,8 +2,10 @@ package com.yeetdot.noob.item;
 
 import com.yeetdot.noob.Noob;
 import com.yeetdot.noob.block.ModBlocks;
+import com.yeetdot.noob.effect.ModPotions;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Blocks;
+import net.minecraft.component.type.PotionContentsComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -18,10 +20,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STAFF_BLOCK);
                         entries.add(ModBlocks.NOOB_SKULL);
                         entries.add(ModItems.NOOB_SPAWN_EGG);
+                        entries.add(PotionContentsComponent.createStack(Items.POTION, ModPotions.ALL_EFFECT));
+                        entries.add(PotionContentsComponent.createStack(Items.SPLASH_POTION, ModPotions.ALL_EFFECT));
+                        entries.add(PotionContentsComponent.createStack(Items.LINGERING_POTION, ModPotions.ALL_EFFECT));
+                        entries.add(PotionContentsComponent.createStack(Items.POTION, ModPotions.ALL_EFFECT_LONG));
+                        entries.add(PotionContentsComponent.createStack(Items.SPLASH_POTION, ModPotions.ALL_EFFECT_LONG));
+                        entries.add(PotionContentsComponent.createStack(Items.LINGERING_POTION, ModPotions.ALL_EFFECT_LONG));
                     }).build());
 
 
     public static void RegisterItemGroups() {
-        Noob.LOGGER.info("Registering {} For " + Noob.MOD_ID, NOOB_GROUP);
+        Noob.LOGGER.info("Registering Item Groups For " + Noob.MOD_ID);
     }
 }

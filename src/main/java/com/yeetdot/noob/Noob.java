@@ -7,7 +7,7 @@ import com.yeetdot.noob.entity.ModEntities;
 import com.yeetdot.noob.entity.custom.NoobEntity;
 import com.yeetdot.noob.item.ModItemGroups;
 import com.yeetdot.noob.item.ModItems;
-import com.yeetdot.noob.item.ModPotions;
+import com.yeetdot.noob.effect.ModPotions;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
@@ -22,8 +22,8 @@ public class Noob implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.RegisterItemGroups();
 		ModBlocks.registerModBlocks();
-		ModBlockEntities.RegisterModBlockEntities();
-		ModBlockEntityType.RegisterModBlockEntities();
+//		ModBlockEntities.RegisterModBlockEntities();
+//		ModBlockEntityType.RegisterModBlockEntities();
 		ModPotions.RegisterModPotions();
 
 		LOGGER.info("Hello Fabric world!");

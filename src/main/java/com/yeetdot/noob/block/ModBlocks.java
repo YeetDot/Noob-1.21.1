@@ -29,6 +29,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        Noob.LOGGER.info("Registering ModBlocks for " + Noob.MOD_ID);
+        Noob.LOGGER.info("Registering Blocks for " + Noob.MOD_ID);
     }
 }
